@@ -1,13 +1,13 @@
 === LOG DE PEDIDOS ===
-Inicio de la simulación
+Inicio: 2025-10-21 23:08:37
 
-Cocinero-3 procesó Pedido #3: Gambas al Ajillo
-Cocinero-2 procesó Pedido #2: Chuletón de Buey
-Cocinero-1 procesó Pedido #1: Paella Valenciana
-Cocinero-1 procesó Pedido #6: Paella Valenciana
-Cocinero-2 procesó Pedido #5: Pisto Manchego
-Cocinero-3 procesó Pedido #4: Churros con Chocolate
-Cocinero-1 procesó Pedido #7: Gambas al Ajillo
-Cocinero-3 procesó Pedido #9: Tortilla de Patatas
-Cocinero-2 procesó Pedido #8: Marmitako
-Cocinero-1 procesó Pedido #10: Jamón Ibérico
+[2025-10-21 23:08:39] Cocinero-1 completó Pedido #1: Gazpacho Andaluz
+[2025-10-21 23:08:39] Cocinero-3 completó Pedido #3: Chuletón de Buey
+[2025-10-21 23:08:39] Cocinero-2 completó Pedido #2: Migas Extremeñas
+[2025-10-21 23:08:41] Cocinero-1 completó Pedido #4: Cochinillo Segoviano
+[2025-10-21 23:08:41] Cocinero-2 completó Pedido #6: Churros con Chocolate
+[2025-10-21 23:08:41] Cocinero-3 completó Pedido #5: Gazpacho Andaluz
+[2025-10-21 23:08:43] Cocinero-1 completó Pedido #7: Chuletón de Buey
+[2025-10-21 23:08:43] Cocinero-2 completó Pedido #8: Cochinillo Segoviano
+
+Fin: 2025-10-21 23:08:43

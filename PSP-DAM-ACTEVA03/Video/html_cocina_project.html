@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega PSP - Programación de Servicios y Procesos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: movePattern 20s linear infinite;
+        }
+
+        @keyframes movePattern {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            position: relative;
+            z-index: 1;
+            opacity: 0.95;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .description-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .description-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .description-card h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .description-card p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: #f8f9ff;
+            border-left-width: 8px;
+        }
+
+        .feature-item h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .info-box {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .info-box strong {
+            color: #856404;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👨‍🍳 Simulación Concurrente de Cocina en Restaurante</h1>
+            <p>Programación con Hilos y Sincronización</p>
+        </header>
+
+        <div class="content">
+            <section class="section">
+                <h2>📋 Descripción del Programa</h2>
+                <div class="description-card">
+                    <h3>Sistema de Gestión Concurrente de Pedidos</h3>
+                    <p>
+                        Este programa simula una cocina de restaurante donde varios cocineros trabajan simultáneamente 
+                        procesando pedidos de una lista compartida. Utiliza <strong>programación concurrente con hilos</strong> 
+                        y <strong>mecanismos de sincronización</strong> para garantizar que los recursos compartidos 
+                        (lista de pedidos y archivo de log) se accedan de forma segura sin condiciones de carrera.
+                    </p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <h4>📝 Clase Pedido</h4>
+                            <p>Estructura de datos simple que representa cada pedido con un ID único y el nombre del plato a preparar.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>👨‍🍳 Clase Cocinero</h4>
+                            <p>Hilo independiente que toma pedidos de la lista compartida, simula la preparación y registra el resultado.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>🏪 Clase Cocina</h4>
+                            <p>Clase principal que gestiona la lista de pedidos, coordina los hilos y garantiza la sincronización con Lock.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>🔒 Sincronización</h4>
+                            <p>Uso de threading.Lock para exclusión mutua, evitando que múltiples hilos accedan simultáneamente a recursos críticos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <strong>🔧 Tecnologías Implementadas:</strong> 
+                    Python con módulo threading, sincronización mediante Lock (exclusión mutua), 
+                    gestión de archivos concurrente, y simulación de procesos con time.sleep(). 
+                    El sistema implementa 3 cocineros procesando 20 pedidos de forma concurrente.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>🎥 Video Explicativo</h2>
+                <p style="margin-bottom: 20px; color: #666;">
+                    En este video se explica detalladamente la implementación del sistema concurrente, mostrando 
+                    cómo los hilos de los cocineros acceden de forma sincronizada a la lista compartida de pedidos, 
+                    cómo se previenen las condiciones de carrera con Lock, y cómo se registran las operaciones 
+                    en el archivo log_pedidos.txt de manera segura.
+                </p>
+                
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/VihbByTRo54" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p><strong>Autor:</strong> Esteban Garcés Pérez</p>
+            <p style="margin-top: 10px;">Programación de Servicios y Procesos - 2024/2025</p>
+            <p style="margin-top: 5px; font-size: 0.85em;">Actividad Evaluable 3 - PSP-DAM-ACTEVA03B</p>
+        </footer>
+    </div>
+</body>
+</html>
