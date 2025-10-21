@@ -1,0 +1,11 @@
+=== LOG DE PEDIDOS ===
+Inicio de la simulación
+
+Cocinero-3 procesó Pedido #3: Cochinillo Segoviano
+Cocinero-2 procesó Pedido #2: Cochinillo Segoviano
+Cocinero-1 procesó Pedido #1: Marmitako
+Cocinero-3 procesó Pedido #4: Chuletón de Buey
+Cocinero-1 procesó Pedido #6: Chuletón de Buey
+Cocinero-2 procesó Pedido #5: Tortilla de Patatas
+Cocinero-1 procesó Pedido #8: Croquetas de Jamón
+Cocinero-3 procesó Pedido #7: Crema Catalana
