@@ -1,4 +1,4 @@
-=== LOG DE PEDIDOS ===
+AAAA=== LOG DE PEDIDOS ===
 Inicio: 2025-10-21 23:08:37
 
 [2025-10-21 23:08:39] Cocinero-1 completó Pedido #1: Gazpacho Andaluz
